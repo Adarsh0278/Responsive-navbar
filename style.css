@@ -5,44 +5,71 @@
 .nav{
     height: 100px;
     width: 100%;
-    background-color: aliceblue;
+    background-color: rgb(130, 130, 185);
     position: relative;
     display: flex;
     justify-content: space-between;
     /* padding: 0 2vw; */
     align-items: center;
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid rgb(27, 21, 21); */
+    color: rgb(255, 255, 255);
 }
 
 .logo{
     padding: 2vh 5vw;
+    font-size: 2.6em;
 
 }
 
 .navsev{
     display: flex;
-    font-size: 1.5vw;
+    font-size: 3.2vh;
     gap: 3vw;
     font-weight: 800;
     padding: 2vh 5vw;
+    margin-top: 3vh;
 }
 
+
 .navsev button{
-    width: 6vw;
-    height: 5vh;
-    border: 1px solid black;
+    width: 13vh;
+    height: 6vh;
+    /* border: 1px solid black; */
     border-radius: 5px;
     padding: 0 2vh;
     font-size: 1.4;
     font-weight: 800;
     position: relative;
     bottom: .5vw;
+    background-color: rgb(239, 167, 167);
+    color: rgb(255, 255, 255);
+    border: none;
+
 }
 
+.ri-menu-line{
+    display: none;
+
+}
 @media (max-width:600px){
     .nav{
-        background-color: lightcoral;
+        background-color: rgb(130, 130, 185);
         width: 100%;
         height: 60px;
+        padding: 2vh 5vw;
+        font-size: .7em;
     }
+    .navsev button{
+        display: none;
+    }
+    .navsev h4{
+        display: none   ;
+    }
+    .ri-menu-line{
+        font-weight: 800;
+        font-size: 3vh;
+        display: block;
+        /* margin-top: 2wh; */
+        margin: 31px;
+    }   
 }
